@@ -1,0 +1,39 @@
+@import "../variables";
+
+.nav-button {
+  display: flex;
+  color: $dark-color;
+  text-decoration: none;
+  align-items: center;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.5em;
+  .icon {
+    background: $dark-color;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.2em;
+    border: 4px solid $dark-color;
+    svg {
+      color: $base-color;
+      height: 22px;
+      width: auto;
+    }
+  }
+  &:hover {
+    .icon {
+      background: transparent;
+      transition: 0.2s ease-in-out;
+      svg {
+        color: $dark-color;
+      }
+    }
+  }
+  &.hidden {
+    display: none;
+  }
+}

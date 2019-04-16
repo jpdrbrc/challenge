@@ -1,0 +1,18 @@
+@import "../variables";
+
+.button {
+  border: none;
+  margin: 0;
+  display: inline-block;
+  background: $dark-color;
+  color: $base-color;
+  font-size: 20px;
+  padding: 0.5em 1.2em;
+  border-radius: $border-radius;
+  text-decoration: none;
+  min-width: 150px;
+  &:hover,
+  &:focus {
+    background: rgba($dark-color, 0.8);
+  }
+}
