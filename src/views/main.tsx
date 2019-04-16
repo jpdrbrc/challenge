@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { NavButton } from "../components/nav-button";
 import { ReactComponent as ParkIcon } from "../icons/park.svg";
-import { ReactComponent as LeaveIcon } from "../icons/leave.svg";
 import { ReactComponent as PayIcon } from "../icons/pay.svg";
 
 import "./main.scss";

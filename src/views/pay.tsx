@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import "./pay.scss";
 import { LotItem } from "../models/LotItem";
 import { get } from "../services/db";
 import { TextBox } from "../components/text-box";
 import { SubmitButton, Button } from "../components/button";
-import { format, distanceInWords } from "date-fns";
-import { calculateTimeParked, getTotal, pay } from "../services/ticket";
+import { format } from "date-fns";
+import { getTotal, pay } from "../services/ticket";
 import { convertCurrency, minutesFormat } from "../services/utils";
 import { RouteComponentProps } from "react-router";
 import { Loading } from "../components/loading";
-import { Link } from "react-router-dom";
-import { HomeButton } from "../components/home-button";
 
 interface PayState {
   error: string | null;

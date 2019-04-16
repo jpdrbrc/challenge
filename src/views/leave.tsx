@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import "./leave.scss";
 import { LotItem } from "../models/LotItem";
 import { get } from "../services/db";
-import { TextBox } from "../components/text-box";
-import { SubmitButton, Button, LinkButton } from "../components/button";
+import { Button, LinkButton } from "../components/button";
 import { leave } from "../services/ticket";
 import { RouteComponentProps } from "react-router";
 import { Loading } from "../components/loading";

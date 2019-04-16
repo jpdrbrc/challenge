@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import { create, getLength, setTotalSpots, isLotFull } from "../services/db";
+import React from "react";
+import { create, isLotFull } from "../services/db";
 import { LotItem } from "../models/LotItem";
 
 import "./park.scss";
 import { TextBox } from "../components/text-box";
-import { Link } from "react-router-dom";
 import { SubmitButton, LinkButton } from "../components/button";
 import { Loading } from "../components/loading";
 import { format } from "date-fns";
